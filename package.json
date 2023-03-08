@@ -1,0 +1,18 @@
+{
+  "name": "serious-bank",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./build/tailwind.css --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "daisyui": "^2.51.3"
+  }
+}
