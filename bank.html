@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto px-3">
+            <h2 class="mt-5 text-2xl font-bold">Welcome Mr owner.</h2>
+        </div>
+    </header>
+    <main>
+        <section class="mt-10">
+            <div class="container mx-auto px-3 ">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="col-span-1 w-4/5 bg-base-content text-base-300 p-4 rounded-md shadow-lg mx-auto">
+                        <h4 class="text-2xl mb-3 font-semibold">Deposit amount</h4>
+                        <h2 class="text-6xl font-bold">$<span id="diposit-amount">00</span></h2>
+                    </div>
+                    <div class="col-span-1 w-4/5 bg-accent text-base-300 p-4 rounded-md shadow-lg mx-auto">
+                        <h4 class="text-2xl mb-3 font-semibold">Withdraw amount</h4>
+                        <h2 class="text-6xl font-bold">$<span id="withdraw-amount">00</span></h2>
+                    </div>
+                    <div class="col-span-1 w-4/5 bg-info-content p-4 rounded-md shadow-lg mx-auto text-neutral-content">
+                        <h4 class="text-2xl mb-3 font-semibold">Deposit amount</h4>
+                        <h2 class="text-6xl font-bold">$<span id="total-balance">00</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <div class="container mx-auto px-3">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="col-span-1 w-4/5 mx-auto bg-neutral-content p-3 text-base-300 rounded-md shadow-md">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum omnis quo, provident
+                        obcaecati, quia alias porro molestiae voluptatibus veritatis odio vel ipsam ullam architecto. Ex
+                        tempora commodi modi nulla!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/bank.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
