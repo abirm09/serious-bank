@@ -22,14 +22,14 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div class="col-span-1 w-4/5 bg-base-content text-base-300 p-4 rounded-md shadow-lg mx-auto">
                         <h4 class="text-2xl mb-3 font-semibold">Deposit amount</h4>
-                        <h2 class="text-6xl font-bold">$<span id="diposit-amount">00</span></h2>
+                        <h2 class="text-6xl font-bold">$<span id="deposit-amount">00</span></h2>
                     </div>
                     <div class="col-span-1 w-4/5 bg-accent text-base-300 p-4 rounded-md shadow-lg mx-auto">
                         <h4 class="text-2xl mb-3 font-semibold">Withdraw amount</h4>
                         <h2 class="text-6xl font-bold">$<span id="withdraw-amount">00</span></h2>
                     </div>
                     <div class="col-span-1 w-4/5 bg-info-content p-4 rounded-md shadow-lg mx-auto text-neutral-content">
-                        <h4 class="text-2xl mb-3 font-semibold">Deposit amount</h4>
+                        <h4 class="text-2xl mb-3 font-semibold">Total</h4>
                         <h2 class="text-6xl font-bold">$<span id="total-balance">00</span></h2>
                     </div>
                 </div>
@@ -37,19 +37,29 @@
         </section>
         <section class="mt-20">
             <div class="container mx-auto px-3">
-                <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div class="col-span-1 w-4/5 mx-auto bg-neutral-content p-3 text-base-300 rounded-md shadow-md">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum omnis quo, provident
-                        obcaecati, quia alias porro molestiae voluptatibus veritatis odio vel ipsam ullam architecto. Ex
-                        tempora commodi modi nulla!
+                        <h4 class="my-4 font-bold text-2xl">Deposit here</h4>
+                        <div>
+                            <input type="number" placeholder="* Deposit Amount" class="input w-full text-white"
+                                id="deposit-amount-input" />
+                        </div>
+                        <button class="btn mt-4" id="deposit-btn">Deposit</button>
+                    </div>
+                    <div class="col-span-1 w-4/5 mx-auto bg-info-content text-neutral-content p-3 rounded-md shadow-md">
+                        <h4 class="my-4 font-bold text-2xl">Deposit here</h4>
+                        <div>
+                            <input type="number" placeholder="* Withdraw Amount" class="input w-full text-white"
+                                id="withdraw-input" />
+                        </div>
+                        <button class="btn mt-4" id="withdraw-btn">Withdraw</button>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
     <script src="./js/bank.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>
